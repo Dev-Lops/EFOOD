@@ -24,8 +24,8 @@ interface CheckoutProps {
 
 export const Checkout: React.FC<CheckoutProps> = ({ handleReturnToCart }) => {
   const [payment, setPayment] = useState(false)
-  const [confirmationVisible, setConfirmationVisible] = useState(false)
-  const [transactionId, setTransactionId] = useState<string | undefined>()
+  const [setConfirmationVisible] = useState(false)
+  const [,] = useState<string | undefined>()
 
   const [purchase, { data, isSuccess }] = usePurchaseMutation()
 
