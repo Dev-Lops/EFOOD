@@ -24,7 +24,8 @@ interface CheckoutProps {
 
 export const Checkout: React.FC<CheckoutProps> = ({ handleReturnToCart }) => {
   const [payment, setPayment] = useState(false)
-  const [setConfirmationVisible] = useState(false)
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [confirmationVisible, setConfirmationVisible] = useState(false)
   const [,] = useState<string | undefined>()
 
   const [purchase, { data, isSuccess }] = usePurchaseMutation()
