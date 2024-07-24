@@ -5,8 +5,8 @@ import { useGetPratosQuery } from '../../services/api'
 import { Loader } from '../../components/Loader'
 
 export const Product = () => {
-  const { id } = useParams()
-  const { data: menu } = useGetPratosQuery(id!)
+  const { id } = useParams<{ id: string }>()
+  const { data: menu } = useGetPratosQuery(id ?? '')
 
   if (!menu || !menu.cardapio) {
     return <Loader />
