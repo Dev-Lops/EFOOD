@@ -17,7 +17,7 @@ export const Cart = () => {
   }
 
   const getTotalPrice = () => {
-    return menus.reduce((total, menu) => total + menu.preco!, 0)
+    return menus.reduce((total, menu) => total + menu.preco, 0)
   }
 
   const handleRemoveItem = (id: number) => {
